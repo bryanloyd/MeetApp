@@ -203,3 +203,68 @@ img {
 .footer_content button span {
   color: #d9b8ff;
 }
+
+/* Media Query @ 768px */
+
+@media (min-width: 768px) {
+  .hero_text h1 {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    margin: 75px 0 25px 0;
+    padding: 0 225px;
+    color: #28283d;
+  }
+
+  .hero_text p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    margin-bottom: 25px;
+    padding: 0 175px;
+    color: #87879d;
+  }
+
+  .hero_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero_buttons .one {
+    margin: 0 20px 0 0;
+  }
+
+  .collage {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .smarter h1 {
+    font-size: 4rem;
+    line-height: 4.4rem;
+    padding: 0 175px;
+  }
+
+  .smarter p {
+    padding: 0 90px;
+  }
+
+  .footer {
+    background-image: url(./assets/tablet/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .footer_content h1 {
+    font-size: 4rem;
+    line-height: 4.4rem;
+    padding: 0 175px;
+  }
+
+  .footer_content p {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    padding: 0 100px;
+  }
+}
