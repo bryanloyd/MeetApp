@@ -268,3 +268,77 @@ img {
     padding: 0 100px;
   }
 }
+
+/* Media Query @ 1440px */
+
+@media (min-width: 1440px) {
+  .hero_desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero_desktop h1 {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    margin: 50px 0 25px 0;
+    padding: 0 50px;
+    color: #28283d;
+  }
+
+  .hero_desktop p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    margin-bottom: 25px;
+    padding: 0 150px;
+    color: #87879d;
+  }
+
+  .hero_divider {
+    margin-top: 100px;
+  }
+
+  .collage {
+    padding: 0 200px;
+  }
+
+  .smarter h1 {
+    padding: 0 500px;
+  }
+
+  .smarter p {
+    padding: 0 475px;
+  }
+
+  .footer {
+    background-image: url(./assets/desktop/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .footer_content {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer_content h1 {
+    font-size: 4rem;
+    line-height: 4.4rem;
+    padding: 0 0 0 100px;
+  }
+
+  .footer_content p {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    padding: 0 100px;
+  }
+
+  .footer_content button {
+    margin: 0 100px 0 0;
+  }
+}
