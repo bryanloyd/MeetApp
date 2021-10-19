@@ -76,10 +76,15 @@ img {
   font-size: 1.6rem;
   line-height: 2.6rem;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .hero_buttons .one span {
   color: #90e4f9;
+}
+
+.hero_buttons .one:hover {
+  background-color: #71c0d4;
 }
 
 .hero_buttons .two {
@@ -92,10 +97,15 @@ img {
   font-weight: 900;
   font-size: 1.6rem;
   line-height: 2.6rem;
+  cursor: pointer;
+}
+
+.hero_buttons .two:hover {
+  background-color: #b188dd;
 }
 
 .hero_divider {
-  margin: 50px 0;
+  margin: 80px 0 67px 0;
 }
 
 /* Collage Component */
@@ -117,7 +127,7 @@ img {
 
 .smarter {
   text-align: center;
-  margin-bottom: 160px;
+  margin-bottom: -30px;
 }
 
 .smarter h3 {
@@ -144,12 +154,12 @@ img {
   line-height: 2.6rem;
   color: #87879d;
   font-weight: 500;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   padding: 0 25px;
 }
 
 .smarter img {
-  position: absolute;
+  position: static;
 }
 
 /* Footer Component */
@@ -198,10 +208,15 @@ img {
   font-size: 1.6rem;
   line-height: 2.6rem;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .footer_content button span {
   color: #d9b8ff;
+}
+
+.footer_content button:hover {
+  background-color: #b188dd;
 }
 
 /* Media Query @ 768px */
@@ -319,26 +334,29 @@ img {
   }
 
   .footer_content {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
   }
 
   .footer_content h1 {
     font-size: 4rem;
     line-height: 4.4rem;
-    padding: 0 0 0 100px;
+    padding: 0;
+    margin: 0;
   }
 
   .footer_content p {
+    align-self: center;
     font-size: 1.8rem;
     line-height: 2.6rem;
-    padding: 0 100px;
+    padding: 0;
+    margin: 0;
   }
 
   .footer_content button {
-    margin: 0 100px 0 0;
+    align-self: center;
+    justify-self: center;
+    margin: 0;
   }
 }
